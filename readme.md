@@ -1,11 +1,11 @@
-# 👋 Minimal
-> Minimal is a Landing Page UI template built by [cssninjaStudio](https://cssninja.io).
+# 👋 Minimal Lite
+> Minimal Lite is free a Landing Page UI template built by [cssninjaStudio](https://cssninja.io).
 
 ![Screenshot](https://media.cssninja.io/products/minimal/product.png "Minimal")
 
 ## ✌️ preview
 
-Check out the live demo by clicking [here](https://minimal.cssninja.io/). 
+Check out the live demo (full product) by clicking [here](https://minimal.cssninja.io/). 
 Minimal is built with [Bulma](https://bulma.io) and [Alpine JS](https://github.com/alpinejs/alpine).
 
 ## 👍 Features

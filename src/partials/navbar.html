@@ -12,8 +12,16 @@
   <div class="container">
     <div class="navbar-brand">
       <a class="navbar-item" href="/">
-        <img class="navbar-logo light-image-block" src="img/logo/minimal.svg" alt="" />
-        <img class="navbar-logo dark-image-block" src="img/logo/minimal-white.svg" alt="" />
+        <img
+          class="navbar-logo light-image-block"
+          src="img/logo/minimal.svg"
+          alt=""
+        />
+        <img
+          class="navbar-logo dark-image-block"
+          src="img/logo/minimal-white.svg"
+          alt=""
+        />
       </a>
       <div class="navbar-burger" @click="openMobileMenu()">
         <div class="menu-toggle">
@@ -43,19 +51,12 @@
       <div class="navbar-start">
         <div class="navbar-item has-dropdown is-hoverable">
           <a
-            class="
-              navbar-link
-              is-flex is-align-items-center is-arrowless
-              j-center-tablet-p j-center-mobile
-            "
+            class="navbar-link is-flex is-align-items-center is-arrowless j-center-tablet-p j-center-mobile"
             href="/"
           >
-            Variations
+            Pages
             <span
-              class="
-                px-1
-                is-flex is-justify-content-center is-align-items-center
-              "
+              class="px-1 is-flex is-justify-content-center is-align-items-center"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -83,7 +84,11 @@
       <div class="navbar-end">
         <div class="navbar-item is-mobile-centered">
           <label class="theme-toggle">
-            <input type="checkbox" x-on:change="toggleTheme()" :checked="$store.app.isDark" />
+            <input
+              type="checkbox"
+              x-on:change="toggleTheme()"
+              :checked="$store.app.isDark"
+            />
             <span class="theme-toggle-inner">
               <i class="sun-icon iconify" data-icon="feather:sun"></i>
               <i class="moon-icon iconify" data-icon="feather:moon"></i>

@@ -1,45 +1,36 @@
 "use strict";
 
 //Alpine JS and plugins import
-import Alpine from "alpinejs"
-import intersect from "@alpinejs/intersect"
-import Fern from "@ryangjchandler/fern"
+import Alpine from "alpinejs";
+import intersect from "@alpinejs/intersect";
+import persist from "@alpinejs/persist";
 
-window.Alpine = Alpine
+window.Alpine = Alpine;
 //Init intersect plugin
-Alpine.plugin(intersect)
-//Init Fern plugin
-Alpine.plugin(Fern)
-//Init Fern persisted store
-Alpine.persistedStore("app", {
-  isDark: false,
+Alpine.plugin(intersect);
+//Init persist plugin
+Alpine.plugin(persist);
+//Init store
+Alpine.store("app", {
+  init() {
+    this.on = window.matchMedia("(prefers-color-scheme: dark)").matches;
+  },
+  isDark: Alpine.$persist(false),
 });
+
 //Start Alpine JS
-Alpine.start()
+Alpine.start();
 
-import { env } from "./libs/utils/constants";
-import { switchDemoImages, insertBgImages } from './libs/utils/utils';
-import { initVideoPlayers } from './libs/components/player/player';
-import { initMapBox } from './libs/components/map/map';
-
+import { insertBgImages } from "./libs/utils/utils";
+import { initVideoPlayers } from "./libs/components/player/player";
 import "./libs/components";
 
-
 document.onreadystatechange = function () {
-    if (document.readyState == 'complete') {
+  if (document.readyState == "complete") {
+    //Switch backgrounds
+    const changeBackgrounds = insertBgImages();
 
-        //Switch demo images
-        const changeImages = switchDemoImages(env);
-
-        //Switch backgrounds
-        const changeBackgrounds = insertBgImages();
-
-        //Video Players
-        const players = initVideoPlayers(env);
-
-        //Maps
-        const maps = initMapBox();
-        
-    }
-}
-
+    //Video Players
+    const players = initVideoPlayers();
+  }
+};

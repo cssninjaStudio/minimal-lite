@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.1.0](https://github.com/cssninjaStudio/minimal-lite/compare/v2.0.0...v2.1.0) (2023-02-10)
+
+
+### Features
+
+* upgrade to Astro v2 ([911e611](https://github.com/cssninjaStudio/minimal-lite/commit/911e6115482cd2c11edb9f1f20d6f04223d65768))
+
 ## [2.0.0](https://github.com/cssninjaStudio/minimal-lite/compare/v0.0.1...v2.0.0) (2023-01-07)
 
 

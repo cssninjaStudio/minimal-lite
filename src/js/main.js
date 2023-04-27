@@ -29,8 +29,7 @@ Alpine.store("app", {
 //Start Alpine JS
 Alpine.start()
 
-// import { initVideoPlayers } from "./libs/components/player/player";
-// import { initMapBox } from "./libs/components/map/map";
+import { initVideoPlayers } from "./libs/components/player/player";
 import { insertBgImages } from "./libs/utils/utils";
 import { initLazyLoading } from './libs/utils/lazyload';
 import "./libs/components";
@@ -45,9 +44,6 @@ document.onreadystatechange = function () {
     const changeBackgrounds = insertBgImages();
 
     // //Init videos
-    // const players = initVideoPlayers();
-
-    // //Init maps
-    // const maps = initMapBox();
+    const players = initVideoPlayers();
   }
 };

@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.2.0](https://github.com/cssninjaStudio/minimal-lite/compare/v2.1.1...v2.2.0) (2024-04-27)
+
+
+### Features
+
+* migrate to iconify-icon, update dependencies ([d4f2f42](https://github.com/cssninjaStudio/minimal-lite/commit/d4f2f426d73d6374c4c9e9e06e6f4fc694edd601))
+
 ### [2.1.1](https://github.com/cssninjaStudio/minimal-lite/compare/v2.1.0...v2.1.1) (2023-05-03)
 
 ## [2.1.0](https://github.com/cssninjaStudio/minimal-lite/compare/v2.0.0...v2.1.0) (2023-02-10)
